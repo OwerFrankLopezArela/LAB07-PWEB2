@@ -8,8 +8,8 @@ from reportlab.pdfgen import canvas
 class PDFView(View):
     def get(self, request):
         data = {
-            'nombre': 'Juan',
-            'apellido': 'Pérez',
+            'nombre': 'Ower',
+            'apellido': 'Lopez',
             'edad': 25
         }
 
