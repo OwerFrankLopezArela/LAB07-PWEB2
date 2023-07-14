@@ -1,0 +1,9 @@
+<h1>{{ proyecto.nombre }}</h1>
+
+<h2>Tareas:</h2>
+<ul>
+  {% for tarea in proyecto.tarea_set.all %}
+    <li>{{ tarea.nombre }}</li>
+    <p>{{ tarea.descripcion }}</p>
+  {% endfor %}
+</ul>
