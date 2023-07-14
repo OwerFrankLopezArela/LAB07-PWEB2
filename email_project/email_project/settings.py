@@ -37,9 +37,9 @@ INSTALLED_APPS = [
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
-    'email_app',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'email_app',
 ]
 
 MIDDLEWARE = [
@@ -131,9 +131,6 @@ DEFAULT_FROM_EMAIL = 'olopeza@unsa.edu.pe'  # Reemplaza con tu dirección de ema
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
 STATIC_URL = '/static/'
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'pdf_app/static'),
-]
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field

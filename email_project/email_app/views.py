@@ -11,7 +11,7 @@ def send_email(request):
             send_mail(
                 email.subject,
                 email.message,
-                'your_email@example.com',  # Reemplaza con tu dirección de email
+                'olopeza@unsa.edu.pe', 
                 [email.recipient],
                 fail_silently=False,
             )
