@@ -19,7 +19,7 @@
         <h1>INGRESE LOS DATOS PARA GENERAR EL PDF</h1>
         <form method="POST" action="{% url 'pdf_app:pdf' %}">
             {% csrf_token %}
-            <label for="nombre">Nombre:</label>
+            <label for="nombre">Titulo:</label>
             <input type="text" id="nombre" name="nombre" required>
             <br>
             <label for="contenido">Contenido:</label>
