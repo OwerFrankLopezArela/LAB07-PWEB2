@@ -13,3 +13,4 @@ class PDFView(View):
         }
         pdf = render_to_pdf_response('pdf_app/template.html', data)
         return HttpResponse(pdf, content_type='application/pdf')
+    
