@@ -5,12 +5,50 @@
 <head>
     <meta charset="utf-8">
     <title>PDF DE OWER</title>
-    <link rel="stylesheet" href="{% static 'pdf_app/css/estilo.css' %}">
+    <style>
+        body {
+            background-color: #f2f2f2;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+
+        .titulo {
+            text-align: center;
+            font-size: 28px;
+            color: #007bff;
+            font-weight: bold;
+            margin-bottom: 20px;
+            border-bottom: 3px solid #007bff;
+            padding-bottom: 10px;
+        }
+
+        .contenido {
+            text-align: justify;
+            font-size: 16px;
+            line-height: 1.5;
+            margin-top: 20px;
+        }
+
+        .separador {
+            border-top: 2px solid #007bff;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
-        <h1>{{ nombre }}</h1>
-        <p>{{ contenido }}</p>
+        <h1 class="titulo">{{ nombre }}</h1>
+        <div class="separador"></div>
+        <p class="contenido">{{ contenido }}</p>
     </div>
 </body>
 </html>

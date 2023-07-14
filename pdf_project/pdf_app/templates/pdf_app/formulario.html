@@ -5,11 +5,18 @@
 <head>
     <meta charset="utf-8">
     <title>Formulario de Datos</title>
-    <link rel="stylesheet" href="{% static 'pdf_app/css/estilo.css' %}">
+    <link rel="stylesheet" href="{% static 'pdf_app/css/estiloForm.css' %}">
 </head>
+
+<header>
+    <div class="logo">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/3/3a/LOGO_UNSA.png" alt="Logo">
+    </div>
+</header>
+
 <body>
     <div class="container">
-        <h1>Ingrese los datos para generar el PDF</h1>
+        <h1>INGRESE LOS DATOS PARA GENERAR EL PDF</h1>
         <form method="POST" action="{% url 'pdf_app:pdf' %}">
             {% csrf_token %}
             <label for="nombre">Nombre:</label>
