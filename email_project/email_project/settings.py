@@ -118,12 +118,12 @@ USE_TZ = True
 
 # Configuración del backend de correo electrónico
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST = 'your_smtp_host'
+EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
-EMAIL_HOST_USER = 'olopeza@unsa.edu.pe'  # Reemplaza con tu dirección de email
-EMAIL_HOST_PASSWORD = 'yosiemprepuedo123'  # Reemplaza con la contraseña de tu email
+EMAIL_HOST_USER = 'olopeza@unsa.edu.pe' 
+EMAIL_HOST_PASSWORD = 'yosiemprepuedo123'  
 EMAIL_USE_TLS = True
-DEFAULT_FROM_EMAIL = 'olopeza@unsa.edu.pe'  # Reemplaza con tu dirección de email
+DEFAULT_FROM_EMAIL = 'olopeza@unsa.edu.pe'
 
 
 

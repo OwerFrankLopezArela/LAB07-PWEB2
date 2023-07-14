@@ -9,10 +9,10 @@ def send_email(request):
         if form.is_valid():
             email = form.save()
             send_mail(
-                email.subject,
-                email.message,
+                email.asunto,
+                email.mensaje,
                 'olopeza@unsa.edu.pe', 
-                [email.recipient],
+                [email.destinatario],
                 fail_silently=False,
             )
             email.sent = True
