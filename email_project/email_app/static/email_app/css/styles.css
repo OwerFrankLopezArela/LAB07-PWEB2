@@ -1,0 +1,14 @@
+.container {
+    width: 400px;
+    margin: 0 auto;
+}
+
+form {
+    margin-top: 20px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
