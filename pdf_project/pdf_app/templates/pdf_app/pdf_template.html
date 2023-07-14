@@ -1,17 +1,16 @@
 {% load static %}
 
-
 <!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8">
-    <title>PDF Template</title>
-    <style>
-        /* Estilos CSS personalizados */
-    </style>
+    <title>PDF DE OWER</title>
+    <link rel="stylesheet" href="{% static 'pdf_app/css/estilo.css' %}">
 </head>
 <body>
-    <h1>{{ nombre_variable }}</h1>
-    <!-- Contenido HTML de la plantilla -->
+    <div class="container">
+        <h1>{{ nombre }}</h1>
+        <p>{{ contenido }}</p>
+    </div>
 </body>
 </html>
