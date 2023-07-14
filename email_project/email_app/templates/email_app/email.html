@@ -1,7 +1,7 @@
 {% extends 'email_app/base.html' %}
 
 {% block content %}
-<h2>Enviar Email</h2>
+<h2>ENVIAR EMAIL</h2>
 <form method="post" action="{% url 'send_email' %}">
     {% csrf_token %}
     {{ form.as_p }}
